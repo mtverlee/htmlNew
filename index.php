@@ -9,6 +9,7 @@
 		<html class="no-js" lang="en">
 			<!--<![endif]-->
 			<head>
+				<?php require_once('privatedaddy.php'); ?>
 				<!--- basic page needs
 					================================================== -->
 				<meta charset="utf-8">
