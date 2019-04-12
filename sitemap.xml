@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<urlset xmlns="https://www.sitemaps.org/schemas/sitemap/0.9"> 
+<url>
+  <loc>http://mattverlee.me/index.html</loc>
+  <changefreq>daily</changefreq>
+  <lastmod>2019-04-11</lastmod>
+</url>
+<url>
+  <loc>http://mattverlee.me/cdn-cgi/l/email-protection</loc>
+  <changefreq>daily</changefreq>
+  <lastmod>2019-04-11</lastmod>
+</url>
+</urlset>
