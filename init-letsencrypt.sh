@@ -1,6 +1,6 @@
 #!/bin/bash
 
-domains=(mattverlee.me)
+domains=(mattverlee.me www.mattverlee.me)
 rsa_key_size=4096
 data_path="./data/certbot"
 email="matt@doubleangels.com" # Adding a valid address is strongly recommended
