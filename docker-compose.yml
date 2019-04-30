@@ -4,5 +4,8 @@ https-portal:
   ports:
     - '80:80'
     - '443:443'
+  volumes:
+    - /var/www/html:/var/www/vhosts/poseidon.doubleangels.com
   environment:
     DOMAINS: 'poseidon.doubleangels.com, mattverlee.me'
+    STAGE: 'production'
