@@ -1,11 +1,16 @@
-https-portal:
-  image: steveltn/https-portal:1
-  container_name: html
-  ports:
-    - '80:80'
-    - '443:443'
-  volumes:
-    - /var/www/html:/var/www/vhosts/poseidon.doubleangels.com
-  environment:
-    DOMAINS: 'poseidon.doubleangels.com, mattverlee.me'
-    STAGE: 'production'
+version: '3'
+services:
+  nginx:
+    image: nginx:1.15-alpine
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - ./data/nginx:/etc/nginx/conf.d
+      - ./data/certbot/conf:/etc/letsencrypt
+      - ./data/certbot/www:/var/www/certbot
+  certbot:
+    image: certbot/certbot
+    volumes:
+      - ./data/certbot/conf:/etc/letsencrypt
+      - ./data/certbot/www:/var/www/certbot
